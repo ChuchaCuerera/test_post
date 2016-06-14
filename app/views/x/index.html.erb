@@ -1,1 +1,10 @@
 <h1>ARANTXA</h1>
+
+<form action="/x/create" method='POST'>
+	Nombre:<input type="text" name="name"><br>
+	Email:<input type="text" name="email"><br>
+	Age:<input type="text" name="age"><br>
+	<input type="hidden" name="authenticity_token", value="<%= form_authenticity_token %>">
+	<input type="submit" value="guardar">
+
+</form>
